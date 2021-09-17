@@ -1,0 +1,24 @@
+
+
+No Brasil temos tomada de dois pinos e de três. As vezes desejamos conectar tomada de três pinos em uma de dois, entretanto,
+precisariamos de um adaptador.
+
+O conceito de um adapter é bem simples, cria-se uma classe intermediária que herde da classe que você deseja "forçar" implementação,
+o alvo então (o target) se torna a tomada de dois pinos, ela deve conversar com a tomada de três pinos.
+
+Um adapter força através da criação de uma classe intermediária a implementação. Isso se da por herança, chamamos o método via override e passamos
+dentro as funcionalidades da outra classe.
+
+No caso da tomada, queremos que a tomada de dois pinos suporte uma tomada de três. Através da herança forçamos que a classe intermediária
+herde dela, damos um override no método desejado e passamos dentro as funcionalidades desejadas.
+
+Um adapter é um wrapper de classes.
+
+
+
+Frase útil para acertar no Adapter: "Qual das classes eu quero que suporte da outra?"
+Q&R: Quero que a tomada de dois pinos suporte a tomada de três pinos, logo, é a tomada de dois pinos o target.
+Q&R: Quero que um campo HDVMI suporte um caboi HDMI, logo o target é um HDVMI.
+Q&R: Quero que um parafuso do tipo A entre no tipo B, então quero que o B aceite o A. (target: B)
+
+"Quem que terá de aceitar para ter compatibilidade"
