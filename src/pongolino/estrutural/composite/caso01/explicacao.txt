@@ -4,7 +4,7 @@ Uma empresa tem vários times, cada time pode ter vários outros times e/ou func
 
 Um composite pattern retrata os objetos com hierarquias, neste caso um Composite tem Leaf's, que pode ter tanto leafs
 quanto outros composites. Isso é possível graças a interface que ambos herdam. O objetivo do Composite é usar os
-métodos da interface em uma chamada que envolve todos os seus Leaf's adicionados. 
+métodos da interface em uma chamada que envolve todos os seus Leaf's adicionados.
 
 Um leaf é uma classe abstrata.
 A interface apenas divide as funcionalidades, de tal forma que, a interface não consegue saber quem é seu objeto.
